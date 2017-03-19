@@ -11,12 +11,20 @@
                 <outlet property="BadgeTres" destination="2iu-1x-LfV" id="1vw-SO-odl"/>
                 <outlet property="badgeDeois" destination="OC7-hz-3eI" id="mfq-2B-4AM"/>
                 <outlet property="badgeUm" destination="DYz-Lz-sSB" id="jDj-k1-t9t"/>
+                <outlet property="cidadeTexField" destination="s0F-bE-ddv" id="33r-b5-AhI"/>
+                <outlet property="confirmarSenhaTextField" destination="ww9-tq-K21" id="Zx1-K3-Xrf"/>
                 <outlet property="criSuaSenhabutton" destination="S0W-iT-EqI" id="69w-wh-aJG"/>
                 <outlet property="crieUmaSenhaHeightConstraint" destination="v1L-l5-3ds" id="dbA-8G-yTk"/>
+                <outlet property="emailTextField" destination="aTY-xL-oUd" id="fAJ-y7-ID6"/>
+                <outlet property="enderecoCompletoTextField" destination="kHq-hg-kqA" id="vc3-CB-qvB"/>
+                <outlet property="estadoTextField" destination="cJd-Tt-bNv" id="baQ-X3-m5L"/>
+                <outlet property="nomeCompletoTextField" destination="nLX-YQ-1OG" id="CbV-B0-sbu"/>
+                <outlet property="numeroCasaTextField" destination="cqv-AN-cxP" id="1mW-cf-Zkz"/>
                 <outlet property="qualSeuEnderecoButton" destination="ShZ-vO-2Ie" id="ZgP-he-D4g"/>
                 <outlet property="qualSeuEnderecoHeightConstraint" destination="oRR-L1-Rzn" id="03o-ze-gas"/>
                 <outlet property="quemVoceButton" destination="Wvv-AH-PBk" id="Msx-b2-YBr"/>
                 <outlet property="quemVoceHeightConstraint" destination="QQp-Nq-KST" id="Vru-yP-d2w"/>
+                <outlet property="senhaTextField" destination="05J-nx-3XB" id="Ucx-LD-sgM"/>
                 <outlet property="sexoEscolha" destination="NXa-Ep-uY4" id="x2K-wn-AJq"/>
                 <outlet property="tituloPagina" destination="9wh-9U-nSb" id="WYO-ZZ-UNL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

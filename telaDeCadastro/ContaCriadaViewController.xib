@@ -45,6 +45,9 @@
                             <real key="value" value="1"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="entendiButtonTapped:" destination="-1" eventType="touchUpInside" id="VKb-fH-6aR"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agora você pode agendar suas consultas de forma simples e rápida!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPi-lb-c0U">
                     <fontDescription key="fontDescription" type="system" pointSize="11"/>

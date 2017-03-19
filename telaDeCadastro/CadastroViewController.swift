@@ -9,6 +9,7 @@
 import UIKit
 import BadgeSwift
 import Material
+import RealmSwift
 
 class CadastroViewController: UIViewController {
 
@@ -28,18 +29,28 @@ class CadastroViewController: UIViewController {
     @IBOutlet weak var qualSeuEnderecoButton: RaisedButton!
     @IBOutlet weak var criSuaSenhabutton: RaisedButton!
     @IBOutlet weak var viewTres: UIView!
+    @IBOutlet weak var nomeCompletoTextField: TextField!
+    @IBOutlet weak var emailTextField: TextField!
+    @IBOutlet weak var estadoTextField: TextField!
+    @IBOutlet weak var cidadeTexField: TextField!
+    @IBOutlet weak var enderecoCompletoTextField: TextField!
+    @IBOutlet weak var numeroCasaTextField: TextField!
+    @IBOutlet weak var senhaTextField: TextField!
+    @IBOutlet weak var confirmarSenhaTextField: TextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareButtons()
         prepareHeight()
         prepareBadges()
+        
     }
 
     //MARK: - Actions
     @IBAction func quemVoceButtonTapped(_ sender: AnyObject) {
         prepareBadgeDois()
         prepareHeightDois()
+        prepareCadastro()
         
         viewUm.alpha = 0
         viewDois.alpha = 1
@@ -50,6 +61,8 @@ class CadastroViewController: UIViewController {
     @IBAction func qualSeuEnderecoButtonTapped(_ sender: AnyObject) {
         prepareBadgeTres()
         prepareHeightTres()
+        prepareCadastro()
+        
         viewDois.alpha = 0
         viewTres.alpha = 1
         tituloPagina.text = "Agora, crie uma senha"
@@ -57,9 +70,33 @@ class CadastroViewController: UIViewController {
  
     @IBAction func crieUmaSenhaButtonTapped(_ sender: AnyObject) {
         prepareNavigation()
+        prepareCadastro()
     }
 
     //MARK: - Functions
+    
+    func prepareCadastro() {
+        let paciente = Paciente()
+        paciente.nome = nomeCompletoTextField.text
+        paciente.email = emailTextField.text
+        paciente.estado = estadoTextField.text
+        paciente.cidade = cidadeTexField.text
+        paciente.numeroCasa = numeroCasaTextField.text
+        paciente.ruaCasa = enderecoCompletoTextField.text
+        paciente.senha = senhaTextField.text
+        paciente.confirmarSenha = confirmarSenhaTextField.text
+       
+        let realm = 	try! Realm()
+        
+        try! realm.write {
+            
+       realm.add(paciente)
+            print("Nome Completo: \(paciente.nome),E-mail: \(paciente.email),Estado:\(paciente.estado), Cidade: \(paciente.cidade), Numero: \(paciente.numeroCasa), Endereço: \(paciente.ruaCasa), Senha: \(paciente.senha), Confirmar Senha: \(paciente.confirmarSenha)")
+            
+        }
+    
+    }
+    
     func prepareBadges() {
         badgeUm.textColor = UIColor.asWhite
         badgeUm.badgeColor = UIColor.asTurquoiseBlue

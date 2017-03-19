@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173159741E7F3E6F0029FED9 /* Cadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173159731E7F3E6F0029FED9 /* Cadastro.swift */; };
 		177B84271E7E466F00776D03 /* UIColor+ASAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B84261E7E466F00776D03 /* UIColor+ASAdditions.swift */; };
 		177B842A1E7E59A000776D03 /* ContaCriadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B84281E7E59A000776D03 /* ContaCriadaViewController.swift */; };
 		177B842B1E7E59A000776D03 /* ContaCriadaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177B84291E7E59A000776D03 /* ContaCriadaViewController.xib */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		173159731E7F3E6F0029FED9 /* Cadastro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cadastro.swift; sourceTree = "<group>"; };
 		177B84261E7E466F00776D03 /* UIColor+ASAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ASAdditions.swift"; sourceTree = "<group>"; };
 		177B84281E7E59A000776D03 /* ContaCriadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContaCriadaViewController.swift; sourceTree = "<group>"; };
 		177B84291E7E59A000776D03 /* ContaCriadaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContaCriadaViewController.xib; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				177B84261E7E466F00776D03 /* UIColor+ASAdditions.swift */,
 				17F2BCD21E7DC3F300D5E5EA /* LaunchScreen.storyboard */,
 				17F2BCD51E7DC3F300D5E5EA /* Info.plist */,
+				173159731E7F3E6F0029FED9 /* Cadastro.swift */,
 			);
 			path = telaDeCadastro;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17F2BCCA1E7DC3F300D5E5EA /* AppDelegate.swift in Sources */,
+				173159741E7F3E6F0029FED9 /* Cadastro.swift in Sources */,
 				177B84271E7E466F00776D03 /* UIColor+ASAdditions.swift in Sources */,
 				177B842A1E7E59A000776D03 /* ContaCriadaViewController.swift in Sources */,
 				17F2BCDE1E7DC5F700D5E5EA /* CadastroViewController.swift in Sources */,
