@@ -1,0 +1,28 @@
+PODS:
+  - BadgeSwift (4.0.0)
+  - CZPicker (0.4.3)
+  - Material (2.4.19):
+    - Material/Core (= 2.4.19)
+  - Material/Core (2.4.19)
+  - Realm (2.4.3):
+    - Realm/Headers (= 2.4.3)
+  - Realm/Headers (2.4.3)
+  - RealmSwift (2.4.3):
+    - Realm (= 2.4.3)
+
+DEPENDENCIES:
+  - BadgeSwift (~> 4.0)
+  - CZPicker
+  - Material (~> 2.0)
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  BadgeSwift: b291cf8ca88674d61cd781f14988272988f4dff4
+  CZPicker: 55aa1751ea26e209814552da1a9a08cba8bbf72a
+  Material: 67b52869f68ab95757e14801ffba0a52a4f19c31
+  Realm: e08d60b0048ccccd3949c8c28a92c4db5712d7e9
+  RealmSwift: 30d49739ccb3385d201242736ca4dda56aec9dfc
+
+PODFILE CHECKSUM: 1cf6bba34b337a5ce5c9def4711207c6e82017ab
+
+COCOAPODS: 1.1.0.rc.2

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CadastroViewController" customModule="telaDeCadastro" customModuleProvider="target">
+            <connections>
+                <outlet property="BadgeTres" destination="2iu-1x-LfV" id="1vw-SO-odl"/>
+                <outlet property="badgeDeois" destination="OC7-hz-3eI" id="mfq-2B-4AM"/>
+                <outlet property="badgeUm" destination="DYz-Lz-sSB" id="jDj-k1-t9t"/>
+                <outlet property="criSuaSenhabutton" destination="S0W-iT-EqI" id="69w-wh-aJG"/>
+                <outlet property="crieUmaSenhaHeightConstraint" destination="v1L-l5-3ds" id="dbA-8G-yTk"/>
+                <outlet property="qualSeuEnderecoButton" destination="ShZ-vO-2Ie" id="ZgP-he-D4g"/>
+                <outlet property="qualSeuEnderecoHeightConstraint" destination="oRR-L1-Rzn" id="03o-ze-gas"/>
+                <outlet property="quemVoceButton" destination="Wvv-AH-PBk" id="Msx-b2-YBr"/>
+                <outlet property="quemVoceHeightConstraint" destination="QQp-Nq-KST" id="Vru-yP-d2w"/>
+                <outlet property="sexoEscolha" destination="NXa-Ep-uY4" id="x2K-wn-AJq"/>
+                <outlet property="tituloPagina" destination="9wh-9U-nSb" id="WYO-ZZ-UNL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewDois" destination="pdE-bi-HZo" id="nQc-Bd-2Ic"/>
+                <outlet property="viewTres" destination="IZb-VC-Obo" id="unh-do-eKf"/>
+                <outlet property="viewUm" destination="WxP-pR-aVj" id="fs6-cL-KJe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quem é você?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wh-9U-nSb">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="FIB-je-7xe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <color key="textColor" red="0.0" green="0.73725490196078436" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYz-Lz-sSB" customClass="BadgeSwift" customModule="BadgeSwift">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="5pD-wl-qTQ"/>
+                        <constraint firstAttribute="width" constant="24" id="Eup-K3-2yB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="badgeColor">
+                            <color key="value" red="0.0" green="0.73333333333333328" blue="0.83137254901960789" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OC7-hz-3eI" customClass="BadgeSwift" customModule="BadgeSwift">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="bWa-Gs-9bg"/>
+                        <constraint firstAttribute="width" constant="24" id="sPx-A9-DfB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.89674030169999996" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="badgeColor">
+                            <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-1x-LfV" customClass="BadgeSwift" customModule="BadgeSwift">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="Tcq-mf-oLp"/>
+                        <constraint firstAttribute="height" constant="24" id="dee-rP-atX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="badgeColor">
+                            <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WxP-pR-aVj">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvv-AH-PBk" customClass="RaisedButton" customModule="Material">
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="o8J-W3-Snv"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                    <color key="value" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                    <color key="value" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="1" height="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="OK"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="quemVoceButtonTapped:" destination="-1" eventType="touchUpInside" id="CHU-B1-SrO"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLX-YQ-1OG" customClass="TextField" customModule="Material">
+                            <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerNormalHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerActiveHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nome Completo"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isClearIconButtonEnabled" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                    <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.89674030169999996" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerThickness">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isDividerHidden" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTY-xL-oUd" customClass="TextField" customModule="Material">
+                            <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerNormalHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerActiveHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="E-mail"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isClearIconButtonEnabled" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                    <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.89674030169999996" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isDividerHidden" value="NO"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerThickness">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLh-QJ-7N3">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.89674030169999996" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NXa-Ep-uY4">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="a06-mi-qEh"/>
+                            </constraints>
+                            <segments>
+                                <segment title="Masculino"/>
+                                <segment title="Feminino"/>
+                                <segment title="Não Informar"/>
+                            </segments>
+                            <color key="tintColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="aTY-xL-oUd" firstAttribute="leading" secondItem="WxP-pR-aVj" secondAttribute="leading" constant="16" id="2mX-ha-uY2"/>
+                        <constraint firstItem="Wvv-AH-PBk" firstAttribute="leading" secondItem="WxP-pR-aVj" secondAttribute="leading" constant="24" id="62V-Xx-aG2"/>
+                        <constraint firstAttribute="trailing" secondItem="MLh-QJ-7N3" secondAttribute="trailing" constant="16" id="7pD-nJ-DDb"/>
+                        <constraint firstAttribute="bottom" secondItem="Wvv-AH-PBk" secondAttribute="bottom" constant="16" id="Crd-TY-Inh"/>
+                        <constraint firstItem="aTY-xL-oUd" firstAttribute="top" secondItem="nLX-YQ-1OG" secondAttribute="bottom" constant="32" id="Hhm-D0-oWV"/>
+                        <constraint firstAttribute="trailing" secondItem="aTY-xL-oUd" secondAttribute="trailing" constant="16" id="JNh-Uu-ieN"/>
+                        <constraint firstAttribute="trailing" secondItem="NXa-Ep-uY4" secondAttribute="trailing" constant="16" id="MMK-bc-UH5"/>
+                        <constraint firstAttribute="height" constant="300" id="QQp-Nq-KST"/>
+                        <constraint firstItem="NXa-Ep-uY4" firstAttribute="leading" secondItem="WxP-pR-aVj" secondAttribute="leading" constant="16" id="RCZ-OU-ccT"/>
+                        <constraint firstItem="nLX-YQ-1OG" firstAttribute="leading" secondItem="WxP-pR-aVj" secondAttribute="leading" constant="16" id="Vk6-zb-ynh"/>
+                        <constraint firstItem="MLh-QJ-7N3" firstAttribute="leading" secondItem="WxP-pR-aVj" secondAttribute="leading" constant="16" id="bOd-dI-bg1"/>
+                        <constraint firstItem="MLh-QJ-7N3" firstAttribute="top" secondItem="aTY-xL-oUd" secondAttribute="bottom" constant="24" id="mjA-ih-b7r"/>
+                        <constraint firstItem="NXa-Ep-uY4" firstAttribute="top" secondItem="MLh-QJ-7N3" secondAttribute="bottom" constant="12" id="soL-qC-cqK"/>
+                        <constraint firstItem="nLX-YQ-1OG" firstAttribute="top" secondItem="WxP-pR-aVj" secondAttribute="top" constant="24" id="tsp-9f-Mtc"/>
+                        <constraint firstItem="Wvv-AH-PBk" firstAttribute="top" secondItem="NXa-Ep-uY4" secondAttribute="bottom" constant="40" id="w09-TX-TqP"/>
+                        <constraint firstAttribute="trailing" secondItem="nLX-YQ-1OG" secondAttribute="trailing" constant="16" id="xKF-bc-4bi"/>
+                        <constraint firstAttribute="trailing" secondItem="Wvv-AH-PBk" secondAttribute="trailing" constant="24" id="xuz-q0-GRe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdE-bi-HZo">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShZ-vO-2Ie" customClass="RaisedButton" customModule="Material">
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="nlC-vi-de4"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                    <color key="value" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                    <color key="value" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="1" height="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="OK"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="qualSeuEnderecoButtonTapped:" destination="-1" eventType="touchUpInside" id="bIe-Ib-tZ4"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cJd-Tt-bNv" customClass="TextField" customModule="Material">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="h79-4d-7D3"/>
+                            </constraints>
+                            <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerNormalHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerActiveHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isClearIconButtonEnabled" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerThickness">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                    <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.89674030169999996" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isDividerHidden" value="NO"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Estado"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s0F-bE-ddv" customClass="TextField" customModule="Material">
+                            <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerNormalHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerActiveHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isClearIconButtonEnabled" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerThickness">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                    <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.89674030169999996" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isDividerHidden" value="NO"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Cidade"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kHq-hg-kqA" customClass="TextField" customModule="Material">
+                            <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isClearIconButtonEnabled" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerNormalHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerActiveHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                    <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.89674030169999996" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isDividerHidden" value="NO"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerThickness">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Endereço"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqv-AN-cxP" customClass="TextField" customModule="Material">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="73" id="HZh-jy-EDI"/>
+                            </constraints>
+                            <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Número"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerNormalHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerActiveHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isClearIconButtonEnabled" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                    <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.89674030169999996" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isDividerHidden" value="NO"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerThickness">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="s0F-bE-ddv" firstAttribute="bottom" secondItem="cJd-Tt-bNv" secondAttribute="bottom" id="1xf-Nq-W1y"/>
+                        <constraint firstItem="cqv-AN-cxP" firstAttribute="bottom" secondItem="kHq-hg-kqA" secondAttribute="bottom" id="Cy7-LL-vXu"/>
+                        <constraint firstAttribute="trailing" secondItem="cqv-AN-cxP" secondAttribute="trailing" constant="16" id="EAy-L6-Jgm"/>
+                        <constraint firstItem="s0F-bE-ddv" firstAttribute="top" secondItem="pdE-bi-HZo" secondAttribute="top" constant="24" id="Fhi-wH-y6C"/>
+                        <constraint firstItem="cJd-Tt-bNv" firstAttribute="leading" secondItem="pdE-bi-HZo" secondAttribute="leading" constant="16" id="Lg1-1r-1DJ"/>
+                        <constraint firstAttribute="bottom" secondItem="ShZ-vO-2Ie" secondAttribute="bottom" constant="16" id="Mxg-bX-nyh"/>
+                        <constraint firstItem="ShZ-vO-2Ie" firstAttribute="top" secondItem="cqv-AN-cxP" secondAttribute="bottom" constant="135" id="Nfy-0d-COz"/>
+                        <constraint firstItem="ShZ-vO-2Ie" firstAttribute="leading" secondItem="pdE-bi-HZo" secondAttribute="leading" constant="24" id="R9S-2k-Q0J"/>
+                        <constraint firstAttribute="trailing" secondItem="ShZ-vO-2Ie" secondAttribute="trailing" constant="24" id="ZnU-ks-bXA"/>
+                        <constraint firstItem="cqv-AN-cxP" firstAttribute="leading" secondItem="kHq-hg-kqA" secondAttribute="trailing" constant="8" id="f8B-aM-TIo"/>
+                        <constraint firstItem="cJd-Tt-bNv" firstAttribute="top" secondItem="pdE-bi-HZo" secondAttribute="top" constant="24" id="gzn-ma-hPW"/>
+                        <constraint firstAttribute="trailing" secondItem="s0F-bE-ddv" secondAttribute="trailing" constant="16" id="h9K-Mf-zVO"/>
+                        <constraint firstItem="kHq-hg-kqA" firstAttribute="leading" secondItem="pdE-bi-HZo" secondAttribute="leading" constant="16" id="h9Y-S2-A3Y"/>
+                        <constraint firstItem="kHq-hg-kqA" firstAttribute="top" secondItem="cJd-Tt-bNv" secondAttribute="bottom" constant="32" id="hCp-9g-c4c"/>
+                        <constraint firstItem="kHq-hg-kqA" firstAttribute="top" secondItem="s0F-bE-ddv" secondAttribute="bottom" constant="32" id="nD1-dU-n34"/>
+                        <constraint firstItem="s0F-bE-ddv" firstAttribute="leading" secondItem="cJd-Tt-bNv" secondAttribute="trailing" constant="8" id="nyJ-Ds-kuq"/>
+                        <constraint firstAttribute="height" constant="300" id="oRR-L1-Rzn"/>
+                        <constraint firstItem="cqv-AN-cxP" firstAttribute="top" secondItem="s0F-bE-ddv" secondAttribute="bottom" constant="32" id="p8C-a5-kBJ"/>
+                        <constraint firstItem="ShZ-vO-2Ie" firstAttribute="top" secondItem="kHq-hg-kqA" secondAttribute="bottom" constant="135" id="uBL-ra-E4G"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZb-VC-Obo">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0W-iT-EqI" customClass="RaisedButton" customModule="Material">
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="VSk-w0-M2d"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                    <color key="value" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                    <color key="value" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="1" height="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="OK"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="crieUmaSenhaButtonTapped:" destination="-1" eventType="touchUpInside" id="SvM-OJ-P0W"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="05J-nx-3XB" customClass="TextField" customModule="Material">
+                            <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerNormalHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerActiveHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isVisibilityIconButtonEnabled" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                    <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.89674030169999996" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isDividerHidden" value="NO"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerThickness">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Senha"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ww9-tq-K21" customClass="TextField" customModule="Material">
+                            <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerNormalHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerActiveHeight">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isVisibilityIconButtonEnabled" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                    <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.89674030169999996" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isDividerHidden" value="NO"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dividerThickness">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Confirmar Senha"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="05J-nx-3XB" firstAttribute="leading" secondItem="IZb-VC-Obo" secondAttribute="leading" constant="16" id="1pj-gp-UkD"/>
+                        <constraint firstAttribute="trailing" secondItem="S0W-iT-EqI" secondAttribute="trailing" constant="24" id="3r2-hI-ghe"/>
+                        <constraint firstAttribute="trailing" secondItem="05J-nx-3XB" secondAttribute="trailing" constant="16" id="D9M-Gl-a0p"/>
+                        <constraint firstAttribute="trailing" secondItem="ww9-tq-K21" secondAttribute="trailing" constant="16" id="EqD-39-RwM"/>
+                        <constraint firstItem="05J-nx-3XB" firstAttribute="top" secondItem="IZb-VC-Obo" secondAttribute="top" constant="24" id="O5T-t9-6dQ"/>
+                        <constraint firstAttribute="bottom" secondItem="S0W-iT-EqI" secondAttribute="bottom" constant="16" id="PxQ-zQ-Tnb"/>
+                        <constraint firstItem="S0W-iT-EqI" firstAttribute="leading" secondItem="IZb-VC-Obo" secondAttribute="leading" constant="24" id="d57-Nz-mbK"/>
+                        <constraint firstItem="ww9-tq-K21" firstAttribute="top" secondItem="05J-nx-3XB" secondAttribute="bottom" constant="32" id="idC-WZ-u8Z"/>
+                        <constraint firstItem="ww9-tq-K21" firstAttribute="leading" secondItem="IZb-VC-Obo" secondAttribute="leading" constant="16" id="ut1-ah-FeH"/>
+                        <constraint firstAttribute="height" constant="300" id="v1L-l5-3ds"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="9wh-9U-nSb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="Aw7-Jz-9eo"/>
+                <constraint firstItem="WxP-pR-aVj" firstAttribute="top" secondItem="2iu-1x-LfV" secondAttribute="bottom" constant="16" id="C2v-p6-Qc0"/>
+                <constraint firstAttribute="trailing" secondItem="pdE-bi-HZo" secondAttribute="trailing" id="DEj-yT-H8S"/>
+                <constraint firstItem="DYz-Lz-sSB" firstAttribute="top" secondItem="9wh-9U-nSb" secondAttribute="bottom" constant="8" id="Def-cQ-lWF"/>
+                <constraint firstItem="2iu-1x-LfV" firstAttribute="bottom" secondItem="DYz-Lz-sSB" secondAttribute="bottom" id="DhU-ns-hcn"/>
+                <constraint firstAttribute="trailing" secondItem="9wh-9U-nSb" secondAttribute="trailing" constant="16" id="ESr-wn-rwY"/>
+                <constraint firstItem="IZb-VC-Obo" firstAttribute="top" secondItem="pdE-bi-HZo" secondAttribute="bottom" id="FZ9-nB-k8G"/>
+                <constraint firstItem="9wh-9U-nSb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Jeq-ZN-X8p"/>
+                <constraint firstItem="pdE-bi-HZo" firstAttribute="top" secondItem="WxP-pR-aVj" secondAttribute="bottom" id="Nd6-d3-4J6"/>
+                <constraint firstItem="IZb-VC-Obo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NlD-0a-Yi3"/>
+                <constraint firstItem="DYz-Lz-sSB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="108" id="OwV-sh-Ucp"/>
+                <constraint firstItem="OC7-hz-3eI" firstAttribute="bottom" secondItem="DYz-Lz-sSB" secondAttribute="bottom" id="PMV-h9-Bnm"/>
+                <constraint firstItem="2iu-1x-LfV" firstAttribute="top" secondItem="9wh-9U-nSb" secondAttribute="bottom" constant="8" id="Qk5-Ll-cxJ"/>
+                <constraint firstItem="2iu-1x-LfV" firstAttribute="leading" secondItem="OC7-hz-3eI" secondAttribute="trailing" constant="16" id="WdX-hB-7gH"/>
+                <constraint firstAttribute="trailing" secondItem="WxP-pR-aVj" secondAttribute="trailing" id="exQ-dB-rae"/>
+                <constraint firstAttribute="trailing" secondItem="IZb-VC-Obo" secondAttribute="trailing" id="kbZ-7N-ncV"/>
+                <constraint firstAttribute="trailing" secondItem="2iu-1x-LfV" secondAttribute="trailing" constant="108" id="mdG-bm-wcX"/>
+                <constraint firstItem="pdE-bi-HZo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nJD-sJ-46h"/>
+                <constraint firstItem="WxP-pR-aVj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rar-fA-FPI"/>
+                <constraint firstItem="OC7-hz-3eI" firstAttribute="leading" secondItem="DYz-Lz-sSB" secondAttribute="trailing" constant="16" id="t95-an-82p"/>
+                <constraint firstItem="OC7-hz-3eI" firstAttribute="top" secondItem="9wh-9U-nSb" secondAttribute="bottom" constant="8" id="wVp-hp-tZe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="27" y="335"/>
+        </view>
+    </objects>
+</document>
