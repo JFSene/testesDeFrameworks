@@ -46,5 +46,8 @@ class DadosUsuariosViewController: UIViewController {
             
         }
     }
+    func vazia() {
+        
     
+    }
 }
