@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171613DA1E7F54300054187E /* DadosUsuariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171613D81E7F54300054187E /* DadosUsuariosViewController.swift */; };
+		171613DB1E7F54300054187E /* DadosUsuariosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 171613D91E7F54300054187E /* DadosUsuariosViewController.xib */; };
 		173159741E7F3E6F0029FED9 /* Cadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173159731E7F3E6F0029FED9 /* Cadastro.swift */; };
 		177B84271E7E466F00776D03 /* UIColor+ASAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B84261E7E466F00776D03 /* UIColor+ASAdditions.swift */; };
 		177B842A1E7E59A000776D03 /* ContaCriadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B84281E7E59A000776D03 /* ContaCriadaViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		171613D81E7F54300054187E /* DadosUsuariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadosUsuariosViewController.swift; sourceTree = "<group>"; };
+		171613D91E7F54300054187E /* DadosUsuariosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DadosUsuariosViewController.xib; sourceTree = "<group>"; };
 		173159731E7F3E6F0029FED9 /* Cadastro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cadastro.swift; sourceTree = "<group>"; };
 		177B84261E7E466F00776D03 /* UIColor+ASAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ASAdditions.swift"; sourceTree = "<group>"; };
 		177B84281E7E59A000776D03 /* ContaCriadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContaCriadaViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				17F2BCDD1E7DC5F700D5E5EA /* CadastroViewController.xib */,
 				177B84281E7E59A000776D03 /* ContaCriadaViewController.swift */,
 				177B84291E7E59A000776D03 /* ContaCriadaViewController.xib */,
+				171613D81E7F54300054187E /* DadosUsuariosViewController.swift */,
+				171613D91E7F54300054187E /* DadosUsuariosViewController.xib */,
 			);
 			name = CadastroViewcontroller;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171613DB1E7F54300054187E /* DadosUsuariosViewController.xib in Resources */,
 				17F2BCDF1E7DC5F700D5E5EA /* CadastroViewController.xib in Resources */,
 				17F2BCD41E7DC3F300D5E5EA /* LaunchScreen.storyboard in Resources */,
 				177B842B1E7E59A000776D03 /* ContaCriadaViewController.xib in Resources */,
@@ -244,6 +251,7 @@
 				177B84271E7E466F00776D03 /* UIColor+ASAdditions.swift in Sources */,
 				177B842A1E7E59A000776D03 /* ContaCriadaViewController.swift in Sources */,
 				17F2BCDE1E7DC5F700D5E5EA /* CadastroViewController.swift in Sources */,
+				171613DA1E7F54300054187E /* DadosUsuariosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

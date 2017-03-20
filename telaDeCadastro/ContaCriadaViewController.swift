@@ -39,5 +39,14 @@ class ContaCriadaViewController: UIViewController {
 
     @IBAction func entendiButtonTapped(_ sender: AnyObject) {
         printAsCoisas()
+        prepareNavigation()
     }
+    
+    //MARK: - Naviation Setup
+    
+    func prepareNavigation() {
+        
+        navigationController?.pushViewController(DadosUsuariosViewController(), animated: true)
+    }
+
 }
